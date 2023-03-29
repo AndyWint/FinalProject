@@ -15,14 +15,14 @@ void PrintArray(string[] array)
 string[] FindString(string[] array, int size)     // size - размер массива под найденные строки
 {
     string[] resultArray = new string[size];
-    int length = arr.Length;
+    int length = array.Length;
     int i = 0;
     int j = 0;
     while (i < length)
     {
         if (array[i].Length < 4)
         {
-            resultArray[j] = arr[i];
+            resultArray[j] = array[i];
             j++;
         }
         i++;
@@ -30,7 +30,8 @@ string[] FindString(string[] array, int size)     // size - размер мас�
     return resultArray;
 }
 
-
+string[] array = { "What", "is", "that", "6", "Ж", "^_^", "Yes", "you", "rhf", "cfd", "xbr", "?", "Asafhoh"};
+PrintArray(FindString(array, 10));
 
 
 
